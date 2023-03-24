@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: all .5s ease-in;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  background: #f0f0f3;
+}
+
+.container {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 310px;
+  border-radius: .5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
+}
+
+header {
+  background-color: #1b5e20;
+  padding: 2.5rem 1.3rem;
+  text-align: center;
+  color: #fff;
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  display: inline-block;
+  opacity: .8;
+  padding: .5rem 0 1.4rem;
+  font-size: .95rem;
+}
+
+.input-search {
+  background-color: rgba(0, 0, 0, .2);
+  box-shadow: inset -3px -3px 10px rgba(0, 0, 0, .16);
+  border-radius: 3rem;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+  font-size: .95rem;
+}
+
+.input-search::placeholder {
+  color: #fff;
+}
+
+.user-list {
+  background-color: #f0f0f3;
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.user-list li {
+  display: flex;
+  gap: .85rem;
+  padding: 1.25rem;
+}
+
+.user-list img {
+  max-width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 50%;
+  height: 50px;
+}
+
+.user-name {
+  font-size: 1.2rem;
+  margin-bottom: .4rem;
+}
+
+.user-list li:not(:last-of-type) {
+  border-bottom: 1px solid rgba(27, 94, 32, .22);
+}
+
+.user-list li.loading, .user-list li.not-found {
+  justify-content: center;
+}
+
+.user-list li.hide {
+  display: none;
+}
