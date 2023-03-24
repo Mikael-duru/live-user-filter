@@ -23,6 +23,12 @@ body {
   box-shadow: 3px 3px 10px rgba(0, 0, 0, .2);
 }
 
+@media screen and (min-width: 360px){
+  .container{
+    width: 350px;
+  }
+}
+
 header {
   background-color: #1b5e20;
   padding: 2.5rem 1.3rem;
